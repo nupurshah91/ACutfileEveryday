@@ -4,7 +4,7 @@ title:      "Swirly Doilies Cutfiles"
 subtitle:   "Swirl patterned doilies for your next swirly classy project"
 date:       2014-09-24 12:00:00
 author:     "Start Bootstrap"
-header-img: "/img/1_SwirlyDoilies/Cover/Cover.png"
+header-img: "/img/1_SwirlyDoilies/Cover/Cover2.png"
 comments: true
 categories: ["angular"]
 tags: ["angular", "jekyll"]
