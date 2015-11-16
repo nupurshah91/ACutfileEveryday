@@ -8,11 +8,7 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+
                 </div>
             </div>
         </div>
@@ -22,12 +18,23 @@ layout: default
 <!-- Post Content -->
 <article>
     <div class="container">
+        <div class="row post-heading">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>{{ page.title }}</h1>
+                {% if page.subtitle %}
+                <h3 class="subheading">{{ page.subtitle }}</h3>
+                {% endif %}
+                <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+            </div>
+        </div>
+        <hr/>
+
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 				{{ content }}
 
-                <hr>
+                <hr class="style-two">
 
                 <ul class="pager">
                     {% if page.previous.url %}
